@@ -1,10 +1,12 @@
 function Button(props) {
     return (
-        <button
-            type={'button'}
-            className={'confirm-button'}
-            onClick={ props.func }
-        >Подтвердить</button>
+        <span>
+            <button
+                type={'button'}
+                className={'custom-btn btn-1'}
+                onClick={ props.onClick }
+            >Отправить</button>
+        </span>
     );
 }
 
