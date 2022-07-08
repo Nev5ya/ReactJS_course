@@ -1,9 +1,11 @@
-function Input() {
+function Input(props) {
     return (
         <input
             type={'text'}
-            placeholder={'Имя'}
-            className={'name-field'}
+            value={props.value}
+            placeholder={props.placeholder}
+            className={'input'}
+            onChange={props.onChange}
         />
     );
 }

@@ -1,6 +1,9 @@
-function Message () {
+function Message ({ message }) {
     return (
-            <h2>Укажите ваше имя</h2>
+            <div className={'message'}>
+                <h4>{ message.author }</h4>
+                <p>{ message.text }</p>
+            </div>
     );
 }
 

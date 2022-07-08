@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body {
+  background-color: #eaeaea;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+.container {
+  width: 40vw;
+}
+
+.form {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  width: 20vw;
+  padding: 5px;
+  margin: 10px;
+  font-size: 1em;
+}
+
+
+
+.message {
+  border: 1px solid black;
+  margin: 10px 0;
+  padding: 5px 20px;
+  -webkit-box-shadow: 10px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 10px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  box-shadow: 10px 4px 8px 0 rgba(34, 60, 80, 0.2);
+}
+
+button {
+  margin: 15px;
+  outline: none;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-1 {
+  transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+  box-shadow:
+          -7px -7px 20px 0 #fff9,
+          -4px -4px 5px 0 #fff9,
+          7px 7px 20px 0 #0002,
+          4px 4px 5px 0 #0001;
+}
+
+.btn-1:active {
+  background-color: black;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
