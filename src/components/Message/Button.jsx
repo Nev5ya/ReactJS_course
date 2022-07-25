@@ -1,13 +1,14 @@
-function Button(props) {
+import ButtonMui from '@mui/material/Button';
+
+export default function Button(props) {
     return (
-        <span>
-            <button
+            <ButtonMui
+                color='primary'
+                variant='contained'
+                disableElevation
                 type={'button'}
                 className={'custom-btn btn-1'}
                 onClick={ props.onClick }
-            >Отправить</button>
-        </span>
+            >Send</ButtonMui>
     );
 }
-
-export default Button;
